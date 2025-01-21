@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Lopes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Isaac Lopes</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/assets/about-pic.png" alt="Foto de Isaac Lopes">
+        </div>
+        <div class="section__text">
+            <p class="section__text-p1">Olá, Sou</p>
+            <h1 class="title">Isaac Lopes</h1>
+            <p class="section__text-p2">Dev FrontEnd</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Baixar Currículo</button>
+            </div>
+            <div id="redes-contato">
+                <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/isaacldev' ">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/isaac-lopes-60136b348/'">
+            </div>
+        </div>
+    </section>
+<section id="about">
+    <h1 class="title">Sobre Mim</h1>
+    <div class="section-container">
+        <div class="box">
+            <h2>Habilidades</h2>
+            <ul class="text__skills">
+                <li>
+                    <img src="./assets/html.webp" alt="HTML" class="icon p-language">
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <img src="./assets/css.png" alt="CSS" class="icon p-language">
+                    <span>CSS</span>
+                </li>
+            </ul>
+            <p>Tenho conhecimento básico em HTML e CSS, com experiência em criar e estilizar páginas web simples.</p>
+        </div>
+        <div class="box">
+            <h2>Objetivos</h2>
+            <p>
+               Busco uma oportunidade como estagiário de Frontend para iniciar minha experiência no mercado profissional, aplicar meus conhecimentos em desenvolvimento web e aprender com profissionais experientes. 
+            </p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h1 class="title">Contato</h1>
+    <div class="section-container">
+        <div class="box">
+            <h2>Entre em Contato</h2>
+            <p>Se você tem interesse em colaborar ou tem alguma pergunta, sinta-se à vontade para me contatar!</p>
+            <ul class="contact-list">
+                <li>
+                    <img src="./assets/email.png" alt="Email" class="icon">
+                    <span><a href="mailto:isaac.lopes1312@gmail.com">isaac.lopes1312@gmail.com</a></span>
+                </li>
+                <li>
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+                    <span><a href="https://www.linkedin.com/in/isaac-lopes-60136b348/" target="_blank">LinkedIn</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>    
+</body>
+</html>

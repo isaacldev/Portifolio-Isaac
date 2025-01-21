@@ -1,0 +1,274 @@
+/* CUSTOMIZACAO GERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  background: white;
+  background-image: radial-gradient(gray 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: #3b4252;
+}
+
+
+/* TRANSICOES */
+
+a, .btn{
+    transition: all 0.3s ease;
+}
+
+
+/* NAVEGACAO */
+#desktop-nav{
+    background-color: #5e81ac;
+
+}
+nav, .nav-links{
+    display: flex;
+}
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+.nav-links{
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+a{
+    color: #2e3440;
+    text-decoration: none;
+    text-decoration-color: aliceblue;
+}
+a:hover{
+    color: #d8dee9;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #d8dee9;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.logo:hover{
+    cursor: default;
+}
+
+
+/* SECTIONS */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;
+}
+
+
+/* SECTION PERFIL */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+.section__pic-container{
+    display:flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-radius: 50%;
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+}
+.section__text-p1{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: none;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0px 0px 100px black;
+}
+.section__text-p2{
+    text-align: center;
+    font-size: 2rem;
+}
+.redes-contato{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+.icon:hover{
+    height: 2.1rem;
+    transition: ease 0.2s;
+}
+.btn{
+    font-family: 'Poppin',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 1rem;
+    border: solid transparent;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    cursor:pointer;
+
+}
+.btn:hover{
+    font-size: 23px;
+    box-shadow: #5e81ac 0px 0px 0px 3px;
+}
+.btn-color-2:hover{
+    color: #5e81ac;
+    background-color: #d8dee9;
+}
+.btn-color-2{
+    background-color: #5e81ac;
+    color:#d8dee9;
+}
+
+
+
+/* SOBRE MIM */
+#about {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.text__skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text__skills li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.p-language {
+    width: 40px;
+    height: 40px;
+}
+
+.box {
+    flex: 1;
+    background-color: #5e81ac;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    color: #3b4252;
+    line-height: 1.6;
+}
+
+/* CONTATO */
+#contact {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.contact-list a {
+    color: #2e3440;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    color: #5e81ac;
+    text-decoration: underline;
+}
+
+#contact .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.box {
+    flex: 1;
+    max-width: 600px; /* Define um tamanho máximo para a caixa */
+    background-color: #d8dee9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
